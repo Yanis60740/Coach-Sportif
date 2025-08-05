@@ -54,6 +54,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; 
+  overscroll-behavior: none;
 }
 
 @font-face {
