@@ -11,12 +11,6 @@ import MainPage from './components/MainPage.vue';
 @import url('./css/global.scss');
 
 @media screen and (min-width: 700px) {
-    body {
-    background: red;
-  }
-  .mainPage {
-    padding: 20px 0;
-  }
 
   .mainPage {
     &__background {
