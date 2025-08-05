@@ -34,6 +34,7 @@
     height: 100dvh;
     padding: 30px 0;
     box-sizing: border-box;
+    overflow: hidden;
 
     &__background {
       position: absolute;
