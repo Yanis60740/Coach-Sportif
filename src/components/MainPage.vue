@@ -7,9 +7,11 @@
     <div class="mainPage__logo">  
       <img src="../assets/logo.png" alt="Logo">
     </div>
-    <a href="https://calendly.com/jouennenicolas3" target="_blank" class="mainPage__button">
-      <span>Réserver mon coaching</span>
-    </a>
+    <div class="mainPage__buttonBox">
+      <a href="https://calendly.com/jouennenicolas3" target="_blank" class="mainPage__buttonBox__button">
+        <span>Réserver mon coaching</span>
+      </a>
+    </div>
     <div class="mainPage__credits">
       <span>Anais Gourvest / </span>
       <span>Coach Sportif</span>
@@ -42,7 +44,7 @@
       left: 0;
       background-image: url('../assets/background1.jpg'); /* mets le bon chemin */
       background-size: cover;        /* remplissage total */
-      background-position: center;   /* centrer l’image */
+      background-position: center bottom;   /* centrer l’image */
       background-repeat: no-repeat;  /* ne pas répéter */
       object-fit: contain;
       min-height: 100vh;             /* au moins la hauteur de l’écran */
@@ -56,33 +58,38 @@
       height: auto;
     }
   }
+  &__buttonBox {
+    box-sizing: border-box;
+    padding-bottom: 25%;
   
-  &__button {
-    width: 200px;
-      height: 40px;
-      background-color: rgba(0, 0, 0, 0.5); /* noir avec opacité 50% */
-      
-      border-radius: 25px; /* Bord arrondi */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      border: 2px solid $color-red;
+    &__button {
+      width: 200px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5); /* noir avec opacité 50% */
+        
+        border-radius: 25px; /* Bord arrondi */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 2px solid $color-red;
 
-    & span {
-      color: #e3e3e3; /* Couleur du texte */
-      font-family: $gotham-bold;
-      font-size: 12px;
-      font-weight: 400;
-    }
-      
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 1);
+      & span {
+        color: #e3e3e3; /* Couleur du texte */
+        font-family: $gotham-bold;
+        font-size: 12px;
+        font-weight: 400;
       }
-    
+        
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 1);
+        }
+      
+    }
   }
+
 
   &__credits {
     color: $color-gray;
